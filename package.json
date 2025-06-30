@@ -1,0 +1,40 @@
+{
+  "name": "duo-api-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Duo API integration with automatic authentication",
+  "type": "module",
+  "bin": {
+    "duo-api-mcp-server": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "start": "node build/index.js",
+    "dev": "tsc && node build/index.js",
+    "setup": "./setup.sh",
+    "setup-claude": "npm run build && ./scripts/setup-claude.sh",
+    "test-setup": "./scripts/test-setup.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mcp",
+    "duo",
+    "api",
+    "authentication",
+    "security"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "@types/moment": "^2.13.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "@types/node": "^24.0.1",
+    "axios": "^1.9.0",
+    "crypto-js": "^4.2.0",
+    "moment": "^2.30.1",
+    "zod": "^3.25.63"
+  }
+}

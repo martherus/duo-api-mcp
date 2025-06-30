@@ -1,0 +1,30 @@
+{
+  "name": "Sample Environment",
+  "values": [
+    {
+      "key": "bearerToken",
+      "value": "your-api-token-here",
+      "enabled": true
+    },
+    {
+      "key": "postId",
+      "value": "1",
+      "enabled": true
+    },
+    {
+      "key": "postTitle",
+      "value": "Sample Post Title",
+      "enabled": true
+    },
+    {
+      "key": "postBody",
+      "value": "This is a sample post body content.",
+      "enabled": true
+    },
+    {
+      "key": "userId",
+      "value": "1",
+      "enabled": true
+    }
+  ]
+}

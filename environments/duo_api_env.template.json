@@ -1,0 +1,23 @@
+{
+  "name": "Duo API Environment Template",
+  "values": [
+    {
+      "key": "ikey",
+      "value": "YOUR_INTEGRATION_KEY",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "skey",
+      "value": "YOUR_SECRET_KEY",
+      "type": "secret",
+      "enabled": true
+    },
+    {
+      "key": "apihost",
+      "value": "api-xxxxxxxx.duosecurity.com",
+      "type": "default",
+      "enabled": true
+    }
+  ]
+}

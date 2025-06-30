@@ -1,0 +1,75 @@
+{
+  "info": {
+    "_postman_id": "test-duo-collection",
+    "name": "Test Duo API Collection",
+    "description": "A simplified collection for testing Duo API authentication",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Test Duo Admin API - Get Users",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://{{apihost}}/admin/v1/users",
+          "protocol": "https",
+          "host": [
+            "{{apihost}}"
+          ],
+          "path": [
+            "admin",
+            "v1",
+            "users"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Test Duo Admin API - Create User",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "disabled": false
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"username\": \"test-user\", \"email\": \"test@example.com\"}"
+        },
+        "url": {
+          "raw": "https://{{apihost}}/admin/v1/users",
+          "protocol": "https",
+          "host": [
+            "{{apihost}}"
+          ],
+          "path": [
+            "admin",
+            "v1",
+            "users"
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "ikey",
+      "value": "",
+      "disabled": true
+    },
+    {
+      "key": "skey",
+      "value": "",
+      "disabled": true
+    },
+    {
+      "key": "apihost",
+      "value": "",
+      "disabled": true
+    }
+  ]
+}
