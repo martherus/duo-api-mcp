@@ -12,7 +12,7 @@ Thank you for your interest in contributing to the Duo API MCP Server! This docu
 ### Development Setup
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/cisco-sbg/duo-api-mcp.git
 cd duo-api-mcp
 
 # Install dependencies
